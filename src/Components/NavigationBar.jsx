@@ -34,7 +34,7 @@ export default function NavigationBar()
         //{name: "Skills", path: "/GitHub"},
         {name: "Portfolio", path: "/Portfolio"},
         //{name: "Languages", path: "/Languages"},
-        {name: "Contact", path: "/Contact"},
+        {name: "Contact", path: "Contact"},
         //{name: "Test", path: "/Test"}
     ]
     
@@ -53,8 +53,8 @@ export default function NavigationBar()
         {/* <div className="w-full bg-yellow-500"> <p> test</p></div> */}
                 
                 <NavbarContent justify="start" className="flex items-center gap-2 text-slate-50">
-                    <NavbarBrand className="hidden sm:block flex justify-start" onClick={() => navigateTo("/")}>
-                        <a href="/"><Acme /></a>
+                    <NavbarBrand className="hidden sm:block flex justify-start" onPress={() => {navigateTo("/");}}>
+                        <a href="/about-me"><Acme /></a>
                     </NavbarBrand>
                     <NavbarMenuToggle
                         className="sm:hidden"
@@ -71,17 +71,17 @@ export default function NavigationBar()
 
                 <NavbarContent className="hidden sm:flex gap-4" justify="center">
                     <NavbarItem>
-                        <Link color="default" size="lg" href="/" underline="active">
+                        <Link color="default" size="lg" onPress={() => {navigateTo("/");}} underline="active">
                             Home
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="default" href="/Portfolio" underline="active" size="lg">
+                        <Link color="default" onPress={() => {navigateTo("/Portfolio");}} underline="active" size="lg">
                             Portfolio
                         </Link>
                     </NavbarItem>
                     <NavbarItem>
-                        <Link color="default" href="/Contact" underline="active" size="lg">
+                        <Link color="default" onPress={() => {navigateTo("/Contact");}} underline="active" size="lg">
                             Contact
                         </Link>
                     </NavbarItem>

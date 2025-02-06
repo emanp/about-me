@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: "/Portfolio",
+        path: "Portfolio",
         element: <PortfolioPage />
       },
       // {
@@ -44,25 +44,26 @@ const router = createBrowserRouter([
       //   element: <GameDevPage />
       // },
       {
-        path: "/About",
+        path: "About",
         element: <p>About</p>
       },
       {
-        path: "/Contact",
+        path: "Contact",
         element: <ContactPage />
       },
 
       {
-        path: "/Test",
+        path: "Test",
         element: <TestPage />
       },
       {
-        path: "/Skills",
+        path: "Skills",
         element: <p> Skills </p>
       }
     ] 
   },
-])
+], 
+  {basename: "/about-me"})
 
 
 createRoot(document.getElementById('root')).render(
