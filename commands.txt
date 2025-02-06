@@ -1,0 +1,10 @@
+To start the app, run "npm run dev" 
+
+- NextUI is working if you can see the avatars
+- Tailwind is working if the Hello World is Bold and underlined and red-100 shows
+
+
+To make the website accessible on the network, run
+    "npm run dev -- --host"
+
+npm install react-shadow

@@ -1,0 +1,22 @@
+The `sm:hidden` class in Tailwind CSS means **"hidden on screens equal to or larger than the small breakpoint"**.
+
+### Tailwind CSS Breakpoints:
+- **`sm`**: Screens `640px` and larger.
+- **`md`**: Screens `768px` and larger.
+- **`lg`**: Screens `1024px` and larger.
+- **`xl`**: Screens `1280px` and larger.
+- **`2xl`**: Screens `1536px` and larger.
+
+### Behavior of `sm:hidden`:
+- **Hidden on `sm` screens and larger**: The element is hidden on devices with a width of 640px or more.
+- **Visible only on screens smaller than `sm` (below 640px)**: The element remains visible on devices smaller than 640px.
+
+### Practical Example:
+```html
+<div class="sm:hidden">This text is visible on small screens only.</div>
+<div class="hidden sm:block">This text is visible on medium screens and larger.</div>
+```
+
+### To summarize:
+- **`sm:hidden`** → Hidden on `640px` and larger (small screens and up).
+- **`hidden sm:block`** → Hidden on smaller screens, visible on `640px` and larger.
