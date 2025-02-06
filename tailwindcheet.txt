@@ -1,0 +1,6 @@
+
+
+center an item in a div (horizontally)
+    flex flex-col items-center
+
+
