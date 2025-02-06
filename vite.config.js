@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => {
   console.log('VITE_EMAILJS_TEMPLATE_KEY:', process.env.VITE_EMAILJS_TEMPLATE_KEY);
   console.log('VITE_EMAILJS_PUBLIC_KEY:', process.env.VITE_EMAILJS_PUBLIC_KEY);
   return {
-    base: "/",
+    base: "/about-me/",
     plugins: [react()],
   };
 });
