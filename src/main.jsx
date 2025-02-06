@@ -20,7 +20,7 @@ import PortfolioPage from './Pages/PortfolioPage.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/about-me",
     element: <App />, //App for now, will be changed to Home
     children: [
       {
